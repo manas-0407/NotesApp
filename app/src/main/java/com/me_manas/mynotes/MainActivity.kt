@@ -1,21 +1,16 @@
 package com.me_manas.mynotes
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
-import android.widget.CompoundButton
-import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.app.AppCompatDelegate
-import androidx.appcompat.widget.Toolbar
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.material.appbar.AppBarLayout
-import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.switchmaterial.SwitchMaterial
 import java.util.*
 
@@ -77,15 +72,15 @@ class MainActivity : AppCompatActivity(), InterNotesRVAdapt {
         Toast.makeText(this, "NOTE DELETED",Toast.LENGTH_SHORT).show()
     }
 
-    fun submitData(view: View) {
-        val inputeditext= findViewById<EditText>(R.id.edittext)
-        val noteText = inputeditext.text.toString()
-        if(noteText.isNotEmpty()){
-            viewModel.insertnote(Note(noteText))
-            Toast.makeText(this, "NOTE INSERTED",Toast.LENGTH_SHORT).show()
-
-        }
-    }
+//    fun submitData(view: View) {
+//        val inputeditext= findViewById<EditText>(R.id.edittext)
+//        val noteText = inputeditext.text.toString()
+//        if(noteText.isNotEmpty()){
+//            viewModel.insertnote(Note(noteText))
+//            Toast.makeText(this, "NOTE INSERTED",Toast.LENGTH_SHORT).show()
+//
+//        }
+//    }
 
     fun setUpDrawerLayout(){
         setSupportActionBar(findViewById(R.id.topAppBar))
@@ -96,5 +91,10 @@ class MainActivity : AppCompatActivity(), InterNotesRVAdapt {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if(actionBarDrawerToggle.onOptionsItemSelected(item)) return true
         return super.onOptionsItemSelected(item)
+    }
+
+    fun newNote(view: View){
+        val intent:Intent = Intent(this,newNote::class.java)
+        startActivity(intent)
     }
 }

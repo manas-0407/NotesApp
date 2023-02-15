@@ -3,11 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/manas/AndroidStudioProjects/MyNotes/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/manas/AndroidStudioProjects/MyNotes/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/manas/AndroidStudioProjects/MyNotes/app/src/main/res/layout/activity_new_note.xml" value="0.12777777777777777" />
         <entry key="..\:/Users/manas/AndroidStudioProjects/MyNotes/app/src/main/res/layout/drawer_header.xml" value="0.4" />
         <entry key="..\:/Users/manas/AndroidStudioProjects/MyNotes/app/src/main/res/layout/items_news.xml" value="0.10562310030395136" />
         <entry key="..\:/Users/manas/AndroidStudioProjects/MyNotes/app/src/main/res/layout/items_notes.xml" value="0.264" />
         <entry key="..\:/Users/manas/AndroidStudioProjects/MyNotes/app/src/main/res/layout/layout.xml" value="0.20208333333333334" />
+        <entry key="..\:/Users/manas/AndroidStudioProjects/MyNotes/app/src/main/res/layout/new_note_page.xml" value="0.2" />
         <entry key="..\:/Users/manas/AndroidStudioProjects/MyNotes/app/src/main/res/layout/switch_menu.xml" value="0.21927083333333333" />
         <entry key="..\:/Users/manas/AndroidStudioProjects/MyNotes/app/src/main/res/layout/test_recycler.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/manas/AndroidStudioProjects/MyNotes/app/src/main/res/menu/navig_drawer.xml" value="0.253125" />

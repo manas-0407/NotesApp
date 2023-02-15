@@ -3,4 +3,5 @@
     <string name="submit">Submit</string>
     <string name="enter_new_note">Enter New Note</string>
     <string name="application_name">Digital Page</string>
+    <string name="new_note">NEW NOTE</string>
 </resources>

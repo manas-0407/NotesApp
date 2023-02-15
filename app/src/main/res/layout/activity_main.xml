@@ -32,38 +32,33 @@
 
         </com.google.android.material.appbar.AppBarLayout>
 
-        <EditText
-            android:id="@+id/edittext"
+        <androidx.cardview.widget.CardView
+            android:id="@+id/submitcard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/appbar"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            android:hint="@string/enter_new_note"
-            android:layout_marginTop="12dp"
-            android:textSize="16sp"
-            android:padding="20dp"
-            />
+            android:background="#02567C"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="40dp">
 
-        <Button
-            android:id="@+id/submitbutton"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            app:layout_constraintTop_toBottomOf="@id/edittext"
-            android:onClick="submitData"
-            android:gravity="center"
-            android:layout_margin="10dp"
-            android:layout_marginTop="16dp"
-            android:text="@string/submit"
-            android:textSize="16sp"
-            android:background="@color/design_default_color_primary_dark"
-            />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/new_note"
+                android:background="#289ACD"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:padding="3dp"
+                android:onClick="newNote"/>
+
+        </androidx.cardview.widget.CardView>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            app:layout_constraintTop_toBottomOf="@id/submitbutton"
+            app:layout_constraintTop_toBottomOf="@id/submitcard"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
