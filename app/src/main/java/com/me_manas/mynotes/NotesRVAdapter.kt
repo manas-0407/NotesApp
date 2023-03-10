@@ -7,8 +7,9 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import kotlin.reflect.KClass
 
-class NotesRVAdapter(private val context: Context, private val lisetener: InterNotesRVAdapt): RecyclerView.Adapter<NotesRVAdapter.NoteViewHolder>() {
+class NotesRVAdapter(private val context: KClass<MainActivity>, private val lisetener: InterNotesRVAdapt): RecyclerView.Adapter<NotesRVAdapter.NoteViewHolder>() {
 
     private val allNotes= ArrayList<Note>()
 
