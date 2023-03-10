@@ -59,6 +59,7 @@ class MainActivity : AppCompatActivity(), InterNotesRVAdapt {
         viewModel.allnotes.observe(this, Observer { list->
             list?.let{
                 adapter.updateList(it)
+                recyclerView.smoothScrollToPosition(adapter.itemCount)
             }
         })
 
